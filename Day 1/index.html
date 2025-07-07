@@ -1,0 +1,54 @@
+<!-- 
+📘 Day 1 - Script Tag Notes (All 4 Ways)
+
+1️⃣ Script in <head> (normal):
+    ❌ Not safe if accessing DOM. DOM is not ready yet.
+    - ekhane html load howar aagei script run hoye jabe.
+    - Can cause errors if script tries to access DOM elements.
+
+2️⃣ Script in <head> with 'defer':
+    ✅ Best practice.
+    - HTML & script load together.
+    - Script runs after DOM fully parsed.
+    - Good for DOM manipulation.
+    - js and html duitai eksathe load hoy but script aagei run hobe na, aage html run hobe then script run hobe.
+
+3️⃣ Script in <head> with 'async':
+    ⚠️ Use only if script doesn't depend on DOM.
+    - Loads in parallel.
+    - Runs immediately when ready.
+    - Execution order not guaranteed.
+    - async e html and js eksathe load hoy but jokhon js pay tokhon js run hoy then baki html run hoy.
+
+4️⃣ Script at bottom of <body>:
+    ✅ Also good.
+    - DOM is ready when script runs.
+    - Safe for most use cases.
+
+💡 Bonus: Inline script – okay for small testing, not for real projects.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Script Tag Practice</title>
+
+    <!-- defer -->
+    <script defer src="script.js"></script>
+
+    <!-- <script async src="script.js"></script> -->
+
+    <!-- <script src="head-normal.js"></script> -->
+  </head>
+  <body>
+    <h1>40 Days JavaScript</h1>
+    <p id="demo">Hello from HTML</p>
+
+    <!-- Inline script  -->
+    <script>
+      console.log("Hello from inline script");
+      document.getElementById("demo").style.color = "green";
+    </script>
+  </body>
+</html>
