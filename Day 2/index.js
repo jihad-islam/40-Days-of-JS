@@ -3,11 +3,13 @@
         1. They are immutable, meaning their value cannot be changed after creation.
         2. actual data or value store kore.
         3. string, integer, boolean, null, Undefined, etc basic data types.
+        4. it stores value in the stack memory.
 
     non primitive data types or reference data types:
         1. They are mutable, meaning their value can be changed after creation.
         2. era actual value ta store kore na, reference store kore.
         3. object, array, function, etc.
+        4. it stores reference in the stack memory and actual value in the heap memory.
 
         reference stores the memory address of a value, but it does not enclose the adress to programmer. reference has been used in high level programming language.
         pointer is a variable which stores the memory address of another variable. it encloses the memory address to programmer. pointer has been used in low level programming language.
