@@ -34,10 +34,12 @@ Truthy and Falsy Values in JavaScript:
 Logical AND `&&`
 - If the first operand is falsy, return it.
 - Otherwise, return the second operand.
+- main kotha logical AND shurute falsy paile oita return korbe, otherwise second ta return korbe.
  
 Logical OR `||`
 - Returns the first truthy value.
 - If both are falsy, returns the last value.
+- main kotha logical OR shurute truthy paile oita return korbe, otherwise last ta return korbe.
 
 Nullish Coalescing (koalesing) `??`
 - Returns the left-hand value if it is not `null` or `undefined`.
